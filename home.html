@@ -1,0 +1,121 @@
+<!DOCTYPE html data-theme="light">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Money</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .outfit-font {
+            font-family: "Outfit", sans-serif;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#F4F5F7]  outfit-font ">
+    <div class="max-w-lg mx-auto bg-white p-4">
+        <div class="flex justify-between items-center pb-4  pt-10  border-b-4">
+            <div class="flex gap-2 ">
+                <img class="w-[60px]" src="./assets/logo.png" alt="">
+                <div>
+                    <h1 class="font-extrabold text-lg text-black">$ <span id="available-balance">45000</span></h1>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+            <div class="border p-4 rounded-2xl">
+                <p><i class="fa-solid fa-arrow-right-from-bracket mr-2 text-gray-700"></i>Log Out</p>
+
+            </div>
+        </div>
+        <div class=" my-8">
+            <h1 class="font-bold text-2xl"><span style="color:#080808">Welcome to Pay</span> <span
+                    style="color:#7460FF">oo</span></h1>
+            <p>Enjoy easy and convenient financial services with us . <br> Cashout charge is low and </p>
+        </div>
+        <div class="grid grid-cols-3 gap-4 ">
+            <div class="border border-gray-300 rounded-xl p-5 flex flex-col items-center ">
+                <img src="./assets/opt-1.png" alt="">
+                <h1 class="text-gray-500 font-semibold text-xl">Add Money</h1>
+
+            </div>
+            <div class="border border-gray-300 rounded-xl p-5  flex flex-col items-center ">
+                <img src="./assets/opt-2.png" alt="">
+                <h1 class="text-gray-500 font-semibold text-xl">Cashout</h1>
+
+            </div>
+            <div class="border border-gray-300 rounded-xl p-5  flex flex-col items-center  ">
+                <img src="./assets/opt-3.png" alt="">
+                <h1 class="text-gray-500 font-semibold text-xl">Transfer Money</h1>
+
+            </div>
+            <div class="border border-gray-300 rounded-xl p-5  flex flex-col items-center ">
+                <img src="./assets/opt-5.png" alt="">
+                <h1 class="text-gray-500 font-semibold text-xl">Get Bonus</h1>
+
+            </div>
+            <div class="border border-gray-300 rounded-xl p-5 flex flex-col items-center ">
+                <img src="./assets/opt-5.png" alt="">
+                <h1 class="text-gray-500 font-semibold text-xl">Pay Bill</h1>
+
+            </div>
+            <div class="border border-gray-300 rounded-xl p-5 flex flex-col items-center ">
+                <img src="./assets/opt-6.png" alt="">
+                <h1 class="text-gray-500 font-semibold text-xl">Transactions</h1>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="max-w-lg mx-auto">
+        <h1 class="font-semibold text-xl text-[#080808] pl-2 my-4">Add Money</h1>
+        <form class="bg-white rounded-2xl space-y-4 p-10">
+            <div>
+                <label class="font-semibold text-lg text-gray-500" for="">Select A Bank</label>
+                <select id="bank" class="select select-bordered w-full max-w-lg bg-[#F4F5F7] rounded-3xl">
+                    <option>Dutch bangla bank</option>
+                    <option>AB bank</option>
+                    <option>IFIC bank</option>
+                </select>
+            </div>
+            <div>
+                <label class="font-semibold text-lg text-gray-500" for="">Bank Account Number</label>
+                <br>
+                <input id="account-number" class="bg-[#F4F5F7] mt-2 rounded-2xl w-full p-2" type="text"
+                    placeholder='Enter 11 digit account number'>
+            </div>
+            <div>
+                <label class="font-semibold text-lg text-gray-500" for="">Amount to add</label>
+                <br>
+                <input id="add-amount" class="bg-[#F4F5F7] mt-2 rounded-2xl w-full p-2" type="text"
+                    placeholder='Add amount to withdrow'>
+            </div>
+            <div>
+                <label class="font-semibold text-lg text-gray-500" for="">Pin Number</label>
+                <br>
+                <input id="add-pin" class="bg-[#F4F5F7] mt-2 rounded-2xl w-full p-2" type="text"
+                    placeholder='Enter 4 digit pin number'>
+            </div>
+            <button id="btn-add-money"   class=" btn bg-[#3B25C1] w-full rounded-2xl text-white">Add Money</button>
+
+        </form>
+    </div>
+
+
+     <script src="./js/home.js"></script>
+</body>
+
+</html>

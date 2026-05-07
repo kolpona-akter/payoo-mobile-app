@@ -11,10 +11,10 @@ document.getElementById('loginBtn')
          const pinNumberValue = document.getElementById('pin-number').value
          const pinNumberValueConverted = parseInt(pinNumberValue)
 
-         
+
          
          if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber){
-                window.location.href = "./main.html";
+                window.location.href = "./home.html";
          }
          else{
             alert('Invalid ');
